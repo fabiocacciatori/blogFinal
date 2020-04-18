@@ -1,0 +1,46 @@
+.headerStyle {
+  background-image: url("../img/Green-Zen-Header.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+}
+#titleLabel {
+  display: none;
+}
+.kindnessTitle {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 720px) and (max-width: 999px) {
+  .headerStyle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  #titleLabel {
+    margin-right: 5%;
+    display: block;
+    grid-area: tit;
+    font-size: 50px;
+    color: rgb(93, 121, 46);
+  }
+}
+@media (min-width: 1000px) {
+  .headerStyle {
+    display: grid;
+    grid-template-columns: 20% 20% 60%;
+    grid-template-rows: 80px 120px 160px;
+    grid-template-areas:
+      "aa aa aa"
+      "bb bb tit"
+      "cc cc cc";
+  }
+  #titleLabel {
+    display: block;
+    grid-area: tit;
+    font-size: 70px;
+    color: rgb(93, 121, 46);
+  }
+}
