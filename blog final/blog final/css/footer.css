@@ -1,0 +1,11 @@
+.liSocial {
+  display: inline-block;
+}
+#copyright {
+  text-align: center;
+  margin-bottom: 0.6em;
+}
+.listaSocial {
+  display: flex;
+  justify-content: center;
+}
